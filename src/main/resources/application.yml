@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /upload
+qiniu:
+  ak: TMhTbq40CKFis4pp0Ar34z0rg75h2sBtYtDdYfG8
+  sk: qloqU20DmGj0TlO5245lOJvhZ5VJf5GDrozndnSM
+  bucket: jared-top-blog
+  prefix: http://img.jared.top
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 5MB
+      max-file-size: 20MB
+      location: ${user.dir}/tmp
